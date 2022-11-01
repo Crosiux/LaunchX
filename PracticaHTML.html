@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria El Sabor</title>
+</head>
+<body>
+   <header>
+     <h1>Pasteleria El Sabor, desde 2022</h1>
+   </header> 
+   <img src="assets/Pasteleria.png" alt="Logo_Pasteleria" width="400px" height="400px">
+
+   <nav>
+    <h2>Menú de pasteles</h2>
+    <ul>
+        <li class="cakeType">Frambuesa............... $30.000 cop</li>
+        <p>Es un delicioso pastel relleno de frambuesa, con detalles <br> de chocolate
+            y una cubierta de crema leche para un sabor exquisito!!.
+        </p> 
+        <li class="cakeType">Limón................... $50.000 cop</li>
+        <p>Con una lluvia de ralladura de limón, te presentamos un pastel<br>
+            fino y elegante, con una textura increible rellena de chocolate. <br>
+            Animate a probarlo!!.
+        </p> 
+        <li class="cakeType">Tres Leches............. $80.000 cop</li>
+        <p>El pastel de 3 leches es un tipo de postre muy adecuado para cualquier fiesta, <br>
+            cumpleaños o celebración especial ya que se trata de una torta o tarta que queda <br>
+            muy bonita y vistosa, además de deliciosa, y que podrás decorar con cualquier guarnición <br>
+            como frutas, merengues o crema chantilly.
+        </p> 
+        <li class="cakeType">Tiramisú................ $20.000 cop</li>
+        <p>El tiramisú es uno de los postres más populares del mundo. Es un plato dulce tradicional <br>
+         italiano, preparado con café, bizcocho, yemas de huevo, mascarpone y cacao.
+        </p> 
+        <li class="cakeType">Chocolate............... $35.500 cop</li>
+        <p>Delicioso pastel recubierto de chocolate y fresas, con detalles<br>
+            blancos hechos para impresionar tus ojos!!.
+
+        </p> 
+    </ul>
+    <hr>
+    
+    <h2>Adornos disponibles para su pastel</h2>
+    <ul>
+        <li class="pastelDecoration">Crema de maní......$5.000 cop</li>
+        <li class="pastelDecoration">Chispas de Chocolate......$6.000 cop</li>
+        <li class="pastelDecoration">Mermelada de mora.......$3.000 cop</li>
+        <li class="pastelDecoration">Explosión de Frutas......$12.000 cop</li>
+        <li class="pastelDecoration">Relleno de mora.......$8.000 cop</li>
+        <li class="pastelDecoration">Estatuilla de cumpleaños.......$24.000 cop</li>
+    </ul>
+   </nav>
+
+      <!--Formulario de información del cliente-->
+   <!--action: define la ubicación (URL) donde se envían los datos que
+    el formulario ha recopilado cuando se validan.
+
+    method: define con qué método HTTP se envían los datos (get o post)-->
+    <hr>
+    <section>
+        <form action="/my-handling-form-page" method="post">
+         
+            <h3>Seleccion su sede</h3>
+            <select name="user_direction" id="direction">
+                <option value="Norte">Norte</option>
+                <option value="Centro">Centro</option>
+                <option value="Sur">Sur</option>
+            </select>
+
+            <!-- Menú de selección de sabor de chocolate -->
+            <h2>Seleccione uno o varios sabores de pastel</h2>
+            <input type="checkbox" id="Pasteles" name="Pasteles" value="Frambuesa">
+            <label for="Frambuesa" name="Pasteles">Frambuesa</label>
+            <br>
+            <input type="checkbox" id="Pasteles" name="Pasteles" value="Limón">
+            <label for="Limón" name="Pasteles">Limón</label>
+            <br>
+            <input type="checkbox" id="Pasteles" name="Pasteles" value="Tres Leches">
+            <label for="Tres Leches" name="Pasteles">Tres Leches</label>
+            <br>
+            <input type="checkbox" id="Pasteles" name="Pasteles" value="Tiramisú">
+            <label for="Tiramisú" name="Pasteles">Tiramisú</label>
+            <br>
+            <input type="checkbox" id="Pasteles" name="Pasteles" value="Chocolate">
+            <label for="Chocolate" name="Pasteles">Chocolate</label>
+            
+            
+             <!-- Menú de selección de adornos-->
+            <h2>Eliga su adorno preferido para su pastel</h2>
+            <input type="checkbox" name="Decoration" id="Decoration" value="CremaMani">
+            <label for="CremaMani">Crema de maní</label>
+             <br>
+            <input type="checkbox" name="Decoration" id="Decoration" value="ChispasChocolate">
+            <label for="ChispasChocolate">Chispas de Chocolate</label>
+             <br>
+            <input type="checkbox" name="Decoration" id="Decoration" value="Mermelada">
+            <label for="Mermelada">Mermelada de mora</label>
+             <br>
+            <input type="checkbox" name="Decoration" id="Decoration" value="ExplosionFrutas">
+            <label for="ExplosionFrutas">Explosión de Frutas</label>
+             <br>
+            <input type="checkbox" name="Decoration" id="Decoration" value="RellenoMora">
+            <label for="RellenoMora">Relleno de mora</label>
+             <br>
+            <input type="checkbox" name="Decoration" id="Decoration" value="EstatuillaCumpleaños">
+            <label for="EstatuillaCumpleaños">Estatuilla de cumpleaños</label>
+            <br><br>
+            <!--Boton de envio de informacion (Button)-->
+            <li class="button">
+                <button type="submit">Enviar informacion</button>
+            </li>
+
+            <!--Datos personales--> 
+            <h2>Llene su pedido</h2>
+            <ul>
+                <li>
+                    <label for="name">Nombre:</label><br>
+                    <input type="text" name="user_name" id="name">
+                </li>
+                <li>
+                    <label for="num">Numero Celular:</label><br>
+                    <input type="number" name="user_number" id="num">
+                </li>
+                <li>
+                    <label for="mail">Correo Electrónico</label><br>
+                    <input type="email" name="user_mail" id="mail">
+                </li>
+                <li>
+                    <label for="msg">Descripción del pastel:</label> <br>
+                    <textarea id="msg" name="user_message" cols="30" rows="10"></textarea>
+                </li>
+            </ul>
+  
+        </form>
+    </section>
+   
+    
+    <footer>
+        <h2>Contacto</h2>
+            <table>
+                <tr>
+                    <th> Dirección </th>
+                    <th> Teléfono </th>
+                    <th> Horarios de atención </th>
+                </tr>
+                <tr>
+                    <td> <a href="https://g.page/DULCITAKENNEDY?share"> 78k #35a, Cl. 27 Sur ##, Bogotá, Cundinamarca</a></td>
+                    <td> 310 6377857 </td>
+                    <td> Abre a las 7:00 am hasta las 9:00 pm</td>
+                </tr>
+    
+                <tr>
+                    <td> <a href="https://goo.gl/maps/ckgUUKJZJRsXSkwg6"> Cra. 56 #4C-51, Puente Aranda, Bogotá</a></td>
+                    <td> 310 6377857 </td>
+                    <td> Abre a las 7:00 am hasta las 9:00 pm</td>
+                </tr>
+    
+                <tr>
+                    <td> <a href="https://goo.gl/maps/Aep4ZdSMBdmzq24p8"> Cra. 78 #8d-10, Kennedy, Bogotá</a></td>
+                    <td> 310 6377857 </td>
+                    <td> Abre a las 7:00 am hasta las 9:00 pm</td>
+                </tr>
+            </table>
+        </footer>
+    
+</body>
+</html>
